@@ -1,0 +1,93 @@
+/* 1. RESET & BASE BOX MODEL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. CORE LAYOUT */
+html {
+  scroll-behavior: smooth;
+  /* Ensures smooth scrolling to sections when using anchor links */
+}
+
+body {
+  background-color: var(--bg-dark); /* #141A1A from variables.css */
+  color: var(--text-white);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling on mobile */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. TYPOGRAPHY HIERARCHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Luxury serif for headings */
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--text-muted); /* #b0b0b0 */
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+/* 4. REUSABLE UTILITY CLASSES */
+.section-padding {
+  padding: 100px 5%;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 20px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 5. GLOBAL COMPONENT STYLES (GOLD BUTTONS) */
+.btn-gold {
+  background: var(--gold);
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px var(--gold-glow);
+}
+
+/* 6. SCROLLBAR CUSTOMIZATION (Luxury Theme) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5ac04;
+}

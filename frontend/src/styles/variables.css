@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --bg-dark: #141A1A;
+  --bg-card: #1c2424;
+  --gold: #FEBF05;
+  --gold-glow: rgba(254, 191, 5, 0.3);
+  
+  /* Text */
+  --text-white: #ffffff;
+  --text-muted: #b0b0b0;
+
+  /* Glassmorphism */
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Transitions */
+  --transition: 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}

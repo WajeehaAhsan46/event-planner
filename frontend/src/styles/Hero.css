@@ -1,0 +1,94 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  /* ✅ ADD THIS */
+  background-image: url("../assets/image/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* 🔥 DARK OVERLAY (Elementor style look) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(20, 26, 26, 0.85)
+  );
+  z-index: 1;
+}
+
+/* CONTENT ABOVE OVERLAY */
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* TITLE */
+.hero h4 {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+/* MAIN TITLE */
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* BUTTONS */
+.hero-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  background: var(--gold);
+  color: #000;
+  border: none;
+  padding: 15px 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+  background: transparent;
+  color: var(--text-white);
+  border: 1px solid var(--text-white);
+  padding: 15px 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: black;
+}
