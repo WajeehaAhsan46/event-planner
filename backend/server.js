@@ -13,8 +13,8 @@ app.get("/test", (req, res) => {
 // middleware (FIXED)
 app.use(cors({
   origin: [
-    "http://localhost:5000",
-    "https://event-planner-rho-tan.vercel.app/"
+    "http://localhost:5173",
+    "https://event-planner-rho-tan.vercel.app"
   ]
 }));
 app.use(express.json());
