@@ -14,7 +14,7 @@ app.get("/test", (req, res) => {
 app.use(cors({
   origin: [
     "http://localhost:5000",
-    "https://your-vercel-app.vercel.app"
+    "https://event-planner-rho-tan.vercel.app/"
   ]
 }));
 app.use(express.json());
