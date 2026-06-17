@@ -13,7 +13,7 @@ const {
 router.post("/", (req, res, next) => {
   console.log("🔥 ROUTE HIT /api/bookings");
   next();
-});
+}, createBooking);
 
 // GET ALL BOOKINGS
 router.get("/", getBookings);
