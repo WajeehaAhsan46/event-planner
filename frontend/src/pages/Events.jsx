@@ -79,7 +79,8 @@ const Events = () => {
           {[
             { title: "Midnight Gala", cat: "Corporate", img: corporate },
             { title: "Boho Chic Union", cat: "Wedding", img: wedding },
-            { title: "Royal 1st Birthday", cat: "Birthday", img: birthday }
+            { title: "Royal 1st Birthday", cat: "Birthday", img: birthday },
+            { title: "Educational Event", cat:"Education", img:corporate}
           ].map((item, index) => (
             <motion.div 
               key={index} 
