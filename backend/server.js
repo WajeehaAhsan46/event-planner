@@ -11,7 +11,12 @@ app.get("/test", (req, res) => {
   res.json({ message: "backend working" });
 });
 // middleware (FIXED)
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5000",
+    "https://your-vercel-app.vercel.app"
+  ]
+}));
 app.use(express.json());
 
 // DB connect
